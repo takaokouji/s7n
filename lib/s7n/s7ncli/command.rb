@@ -188,9 +188,11 @@ module S7n
           retry
         rescue Exception => e
           puts(e.message)
-          puts("----- back trace -----")
-          e.backtrace.each do |line|
-            puts("  #{line}")
+          if world.debug
+            puts(_("----- back trace -----"))
+            e.backtrace.each do |line|
+              puts("  #{line}")
+            end
           end
         end
         puts(_("Quit."))

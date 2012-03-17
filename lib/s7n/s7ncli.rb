@@ -89,6 +89,10 @@ module S7n
                 _("Specify the base directory. Default is '%s'.") % world.base_dir) do |dir|
           world.base_dir = dir
         end
+        opts.on("--debug",
+                _("Turn on debug mode. Default is '%s'.") % world.debug) do
+          world.debug = true
+        end
         opts.on("-v", "--version", _("Show version.")) do
           puts(_("s7ncli, version %s") % S7n::VERSION)
           exit(0)
@@ -109,6 +113,7 @@ module S7n
           Utils::shred_string(master_key)
           raise InvalidPath.new(world.base_dir)
         end
+        world.lock
         world.start_logging
         begin
           master_key =
@@ -141,8 +146,8 @@ module S7n
         world.start_logging
         world.logger.info(_("created base directory: %s") % world.base_dir)
         world.save(true)
+        world.lock
       end
-      world.lock
       begin
         path = File.join(world.base_dir, "s7ncli")
         if File.file?(path)
@@ -179,13 +184,13 @@ module S7n
           rescue Interrupt
             puts("")
             retry
-          rescue ApplicationError
-            puts($!)
           rescue => e
             puts(e.message)
-            puts("----- back trace -----")
-            e.backtrace.each do |line|
-              puts("  #{line}")
+            if world.debug
+              puts(_("----- back trace -----"))
+              e.backtrace.each do |line|
+                puts("  #{line}")
+              end
             end
           end
         end
@@ -206,6 +211,14 @@ module S7n
           end
         ensure
           world.unlock
+        end
+      end
+    rescue ApplicationError => e
+      puts(e.message)
+      if world.debug
+        puts(GetText._("----- back trace -----"))
+        e.backtrace.each do |line|
+          puts("  #{line}")
         end
       end
     end

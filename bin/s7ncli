@@ -16,13 +16,7 @@ include S7n
 
 path = File.expand_path("../data/locale/", File.dirname(__FILE__))
 GetText.bindtextdomain("s7n", :path => path)
-begin
-  S7nCli.run(ARGV)
-rescue ApplicationError => e
-  puts(e.message)
-  puts("----- back trace -----")
-  raise e
-end
+S7nCli.run(ARGV)
 
 # Local Variables:
 # mode: ruby

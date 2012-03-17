@@ -36,6 +36,9 @@ module S7n
     # 変更があるかどうか。
     attr_accessor :changed
 
+    # デバッグモードかどうか。
+    attr_accessor :debug
+
     def initialize
       @base_dir = File.join(Utils::home_dir, ".s7")
       @logger = Logger.new(STDERR)
@@ -43,6 +46,7 @@ module S7n
       @undo_stack = UndoStack.new
       @configuration = Configuration.new(self)
       @changed = false
+      @debug = false
     end
     
     # 2 重起動を防止するためにロックするためのファイルのパスを取得する。
@@ -72,7 +76,11 @@ module S7n
     def lock
       if File.exist?(lock_path)
         pid = File.read(lock_path).to_i
-        raise ApplicationError, _("running other s7n: pid=<%d>") % pid
+        begin
+          Process.kill(0, pid)
+          raise ApplicationError, _("running other s7n: pid=<%d>") % pid
+        rescue Errno::ENOENT, Errno::ESRCH
+        end
       end
       File.open(lock_path, "w") do |f|
         f.flock(File::LOCK_EX)
