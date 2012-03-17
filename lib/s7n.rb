@@ -7,6 +7,6 @@ module S7n
 end
 
 require "s7n/world"
-require "s7n/s7_file"
+require "s7n/s7n_file"
 require "s7n/exception"
 require "s7n/gpass_file"

@@ -174,7 +174,7 @@ module S7n
         system("clear")
         puts(_("Locked screen."))
         world.save
-        prompt = _("Enter the master key for s7: ")
+        prompt = _("Enter the master key for s7n: ")
         begin
           input = S7Cli.input_string_without_echo(prompt)
           if input != world.master_key

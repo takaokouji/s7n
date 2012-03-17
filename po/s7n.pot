@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: s7n 0.0.1\n"
-"POT-Creation-Date: 2012-03-17 17:20+0900\n"
-"PO-Revision-Date: 2012-03-17 17:20+0900\n"
+"Project-Id-Version: s7n 0.1.0\n"
+"POT-Creation-Date: 2012-03-17 18:07+0900\n"
+"PO-Revision-Date: 2012-03-17 17:57+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -218,7 +218,7 @@ msgid "Locked screen."
 msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:177 lib/s7n/s7ncli.rb:115 lib/s7n/s7ncli.rb:127
-msgid "Enter the master key for s7: "
+msgid "Enter the master key for s7n: "
 msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:183
@@ -509,7 +509,7 @@ msgid "Show help and exit."
 msgstr ""
 
 #: lib/s7n/s7ncli.rb:132
-msgid "Comfirm the master key for s7: "
+msgid "Comfirm the master key for s7n: "
 msgstr ""
 
 #: lib/s7n/s7ncli.rb:142

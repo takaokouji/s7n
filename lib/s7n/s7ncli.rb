@@ -12,7 +12,7 @@ Dir.glob(command_pattern).each do |path|
   require path.gsub(/\.rb\z/, "")
 end
 
-# s7 のコマンドラインインタフェースを表現する。
+# s7n のコマンドラインインタフェースを表現する。
 module S7n
   class S7nCli
     include GetText
@@ -112,11 +112,11 @@ module S7n
         world.start_logging
         begin
           master_key =
-            S7nCli.input_string_without_echo(_("Enter the master key for s7: "))
+            S7nCli.input_string_without_echo(_("Enter the master key for s7n: "))
           if master_key.nil?
             exit(1)
           end
-          world.load(S7File.read(world.secrets_path, master_key))
+          world.load(S7nFile.read(world.secrets_path, master_key))
           world.master_key = master_key
         rescue InvalidPassphrase => e
           puts(e.message)
@@ -124,12 +124,12 @@ module S7n
         end
       else
         master_key =
-          S7nCli.input_string_without_echo(_("Enter the master key for s7: "))
+          S7nCli.input_string_without_echo(_("Enter the master key for s7n: "))
         if master_key.nil?
           exit(1)
         end
         confirmation =
-          S7nCli.input_string_without_echo(_("Comfirm the master key for s7: "))
+          S7nCli.input_string_without_echo(_("Comfirm the master key for s7n: "))
         if master_key != confirmation
           Utils::shred_string(master_key)
           Utils::shred_string(confirmation) if !confirmation.nil?
@@ -144,10 +144,10 @@ module S7n
       end
       world.lock
       begin
-        path = File.join(world.base_dir, "s7cli")
+        path = File.join(world.base_dir, "s7ncli")
         if File.file?(path)
           begin
-            hash = YAML.load(S7File.read(path, world.master_key))
+            hash = YAML.load(S7nFile.read(path, world.master_key))
             hash["history"].each_line do |line|
               Readline::HISTORY.push(line.chomp)
             end
@@ -158,7 +158,7 @@ module S7n
         end
         loop do
           begin
-            prompt = "%ss7> " % (world.changed ? "*" : "")
+            prompt = "%ss7n> " % (world.changed ? "*" : "")
             input = S7nCli.input_string(prompt, true)
             if !input
               puts("")
@@ -193,12 +193,12 @@ module S7n
         begin
           world.save
           begin
-            path = File.join(world.base_dir, "s7cli")
+            path = File.join(world.base_dir, "s7ncli")
             # TODO: history の上限を設ける。
             hash = {
               "history" => Readline::HISTORY.to_a.join("\n"),
             }
-            S7File.write(path, world.master_key,
+            S7nFile.write(path, world.master_key,
                          world.configuration.cipher_type, hash.to_yaml)
           rescue
             puts(_("could not write: %s") % path)
