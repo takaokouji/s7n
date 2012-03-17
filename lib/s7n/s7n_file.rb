@@ -9,8 +9,7 @@ module S7n
   # s7 オリジナルのファイル形式で機密情報の読み書きを表現する。
   module S7nFile
     # マジック。
-    MAGIC = "s7n file version 1\n"
-    MAGIC_S7 = "s7 file version 0\n"
+    MAGIC = "s7 file version 0\n"
 
     # data で指定したバイト列を暗号化して書き込む。
     def write(path, master_key, cipher_type, data)
@@ -34,7 +33,7 @@ module S7n
       File.open(path, "rb") do |f|
         f.flock(File::LOCK_EX)
         magic = f.gets
-        if ![MAGIC, MAGIC_S7].include?(magic)
+        if MAGIC != magic
           raise InvalidPassphrase
         end
         cipher_type = f.gets.chomp
