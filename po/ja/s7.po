@@ -1,0 +1,133 @@
+# s7 - The secret informations manager
+# Copyright (C) 2008 TAKAO Kouji <kouji@takao7.net>
+# This file is distributed under the same license as the s7.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: s7 0.0.1\n"
+"POT-Creation-Date: 2008-10-05 01:36+0900\n"
+"PO-Revision-Date: 2008-09-28 15:09+0900\n"
+"Last-Translator: TAKAO Kouji <kouji@takao7.net>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+
+#: bin/s7cli:36
+msgid "usage: %s [options]"
+msgstr "使用方法: %s [オプション]"
+
+#: bin/s7cli:38
+msgid "options:"
+msgstr "オプション:"
+
+#: bin/s7cli:40
+msgid "Specify the base directory. Default is '%s'."
+msgstr "ベースディレクトリを指定する。デフォルトは'%s'です。"
+
+#: bin/s7cli:44
+msgid "Show help and exit."
+msgstr "使用方法を表示して終了する。"
+
+#: bin/s7cli:64
+msgid "Enter the master key for s7: "
+msgstr ""
+
+#: bin/s7cli:69
+msgid "Comfirm the master key for s7: "
+msgstr ""
+
+#: bin/s7cli:79
+msgid "created base directory: %s"
+msgstr ""
+
+#: bin/s7cli:121
+msgid "failed execute: command=<%s>"
+msgstr ""
+
+#: lib/s7/entry.rb:18
+msgid "id"
+msgstr ""
+
+#: lib/s7/entry.rb:21 lib/s7/gpass_file.rb:25
+msgid "name"
+msgstr ""
+
+#: lib/s7/entry.rb:23
+msgid "rate"
+msgstr ""
+
+#: lib/s7/entry.rb:58
+msgid "not same attribute type: name=<%s> exist=<%s> argument=<%s>"
+msgstr ""
+
+#: lib/s7/exception.rb:14
+msgid "invlaid passphrase"
+msgstr "不正なパスフレーズです。"
+
+#: lib/s7/exception.rb:25
+msgid "invalid path: path=<%s>"
+msgstr ""
+
+#: lib/s7/exception.rb:36
+msgid "does not exit: path=<%s>"
+msgstr "ファイルやディレクトリは存在しません: パス=<%s>"
+
+#: lib/s7/exception.rb:48
+msgid "invalid data length: actual=<%s> needed=<%s>"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:26
+msgid "description"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:27
+msgid "created_at"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:28
+msgid "updated_at"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:29
+msgid "expiration"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:30
+msgid "expire_at"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:33
+msgid "username"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:34
+msgid "password"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:37
+msgid "hostname"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:40
+msgid "url"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:85
+msgid "not supported version: %s"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:93
+msgid "duplicated entry id: %s"
+msgstr ""
+
+#: lib/s7/gpass_file.rb:131
+msgid "invalid entry type: type=<%s>"
+msgstr ""
+
+#: lib/s7/world.rb:52
+msgid "running other s7: pid=<%d>"
+msgstr ""
