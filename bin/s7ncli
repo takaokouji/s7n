@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+$:.unshift(File.expand_path("../lib", File.dirname(__FILE__)))
+
+require "gettext"
+
+require "s7n"
+require "s7n/s7ncli"
+
+include S7n
+
+path = File.expand_path("../data/locale/", File.dirname(__FILE__))
+GetText.bindtextdomain("s7n", :path => path)
+begin
+  S7nCli.run(ARGV)
+rescue ApplicationError => e
+  puts(e.message)
+  puts("----- back trace -----")
+  raise e
+end
+
+# Local Variables:
+# mode: ruby
+# End:

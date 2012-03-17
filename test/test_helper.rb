@@ -4,6 +4,8 @@ require "test/unit"
 require "pp"
 require "tempfile"
 require "stringio"
+require "gettext"
 
 class Test::Unit::TestCase
+  include GetText
 end

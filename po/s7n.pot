@@ -1,0 +1,533 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: s7n 0.0.1\n"
+"POT-Creation-Date: 2012-03-17 17:20+0900\n"
+"PO-Revision-Date: 2012-03-17 17:20+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: lib/s7n/attribute.rb:161
+msgid "Yes"
+msgstr ""
+
+#: lib/s7n/attribute.rb:161
+msgid "No"
+msgstr ""
+
+#: lib/s7n/entry.rb:18
+msgid "id"
+msgstr ""
+
+#: lib/s7n/entry.rb:21 lib/s7n/gpass_file.rb:26
+msgid "name"
+msgstr ""
+
+#: lib/s7n/entry.rb:23
+msgid "rate"
+msgstr ""
+
+#: lib/s7n/entry.rb:59
+msgid "not same attribute type: name=<%s> exist=<%s> argument=<%s>"
+msgstr ""
+
+#: lib/s7n/exception.rb:14
+msgid "Invlaid passphrase."
+msgstr ""
+
+#: lib/s7n/exception.rb:25
+msgid "Invalid path: path=<%s>"
+msgstr ""
+
+#: lib/s7n/exception.rb:36
+msgid "Does not exit: path=<%s>"
+msgstr ""
+
+#: lib/s7n/exception.rb:54
+msgid "No such entry."
+msgstr ""
+
+#: lib/s7n/exception.rb:56
+msgid "No such entry:%s"
+msgstr ""
+
+#: lib/s7n/exception.rb:75
+msgid "No such attribute."
+msgstr ""
+
+#: lib/s7n/exception.rb:77
+msgid "No such attribute:%s"
+msgstr ""
+
+#: lib/s7n/exception.rb:90
+msgid "Invalid data length: actual=<%s> needed=<%s>"
+msgstr ""
+
+#: lib/s7n/exception.rb:96
+msgid "Canceled."
+msgstr ""
+
+#: lib/s7n/exception.rb:113
+msgid "Failed the command: command=<%s> status=<%d>"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:27
+msgid "description"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:28
+msgid "created_at"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:29
+msgid "updated_at"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:30
+msgid "expiration"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:31
+msgid "expire_at"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:34
+msgid "username"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:35
+msgid "password"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:38
+msgid "hostname"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:41
+msgid "url"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:86
+msgid "not supported version: %s"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:94
+msgid "duplicated entry id: %s"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:130
+msgid "invalid entry type: type=<%s>"
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:14
+#: lib/s7n/s7ncli/attribute_command.rb:51
+msgid "Copy the attribute value to the clipboard."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:15
+msgid "usage: copy [ID] [ATTRIBUTE NAME] [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:26 lib/s7n/s7ncli/entry_command.rb:406
+#: lib/s7n/s7ncli/entry_command.rb:454
+msgid "Entry ID."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:27
+msgid "Attribute name."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:29
+msgid "Inclement the entry's rate after copied."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:31
+msgid "Lock screen after copied."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:32
+msgid "Copy command."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:47 lib/s7n/s7ncli/entry_command.rb:422
+#: lib/s7n/s7ncli/entry_command.rb:466 lib/s7n/s7ncli/entry_command.rb:707
+msgid "Too few arguments."
+msgstr ""
+
+#: lib/s7n/s7ncli/attribute_command.rb:71 lib/s7n/s7ncli/entry_command.rb:481
+msgid "Changed rate to %d."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:119
+msgid "Describe the commands."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:120
+msgid "usage: help [COMMAND]"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:129 lib/s7n/s7ncli/entry_command.rb:284
+#: lib/s7n/s7ncli.rb:177
+msgid "Unknown command: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:132
+msgid "Type 'help <command>' for help on a specific command."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:134
+msgid "Available commands:"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:153
+msgid "Save."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:153
+msgid "usage: save"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:157
+msgid "Force."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:163
+msgid "Saved."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:171
+msgid "Lock screen after saved."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:171
+msgid "usage: lock"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:175
+msgid "Locked screen."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:177 lib/s7n/s7ncli.rb:115 lib/s7n/s7ncli.rb:127
+msgid "Enter the master key for s7: "
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:183
+msgid "Unlocked."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:187 lib/s7n/s7ncli/entry_command.rb:77
+#: lib/s7n/s7ncli/entry_command.rb:129
+msgid "Try again."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:196 lib/s7n/s7ncli/command.rb:205
+msgid "Quit."
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:206
+msgid "usage: quit"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:15
+msgid "Import the entry colleciton from file."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:16
+msgid "usage: import [PATH] [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:22
+msgid "type"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:23
+msgid "path"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:38
+msgid "Import the entry collection in the GPass file: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:41
+msgid "Enter the master passphrase for GPass(^D is cancel): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:48
+msgid "Imported %d entries."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_collection_command.rb:57
+msgid "not supported type: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:15
+msgid "<n>,e<n>:edit attribute a:add attribute d<n>:delete attribute"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:16
+msgid "t:edit tags s:save"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:27
+msgid "Attribute name%s: "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:34
+msgid "Already exist: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:49
+msgid " (%s)"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:53
+msgid "Value%s: "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:58
+msgid "Comfirm value: "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:60
+msgid "Mismatched."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:73
+msgid "The value is empty."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:91
+msgid "Edit tags%s: "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:101
+msgid "Is this a secret? (%s): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:107
+msgid "Attribute type: "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:123
+msgid "Unknown type: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:149
+msgid "tags"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:151
+msgid "Command (h:help, s:save, ^C:cancel): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:179 lib/s7n/s7ncli/entry_command.rb:257
+msgid "Invalid index: %d"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:181 lib/s7n/s7ncli/entry_command.rb:375
+msgid "Edit attribute: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:193 lib/s7n/s7ncli/entry_command.rb:227
+msgid "Generate value? (no): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:195 lib/s7n/s7ncli/entry_command.rb:230
+msgid "Length (8): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:214
+msgid "Updated '%s'."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:216
+msgid "Add attribute."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:252
+msgid "Added attribute: '%s'"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:260
+msgid "Can't delete attribute: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:263
+msgid "Delete attribute '%s'? (no): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:268
+msgid "Deleted attribute: '%s'"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:275
+msgid "Updated tags."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:279
+msgid "Saved: %d"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:312
+msgid "tag"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:327 lib/s7n/s7ncli/entry_command.rb:362
+msgid "Add the entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:328
+msgid "usage: add [NAME] [TAGS] [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:334
+msgid "Name."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:335 lib/s7n/s7ncli/entry_command.rb:508
+msgid "Tags."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:337
+msgid "Entry ID that is copied."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:401 lib/s7n/s7ncli/entry_command.rb:430
+msgid "Edit the entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:402
+msgid "usage: edit <ID> [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:448
+msgid "Show the entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:449
+msgid "usage: show <ID> [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:456
+msgid "Show value of secret attributes."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:498
+msgid "Search the entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:499
+msgid "usage: search [QUERY] [OPTIONS]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:507
+msgid "Query."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:509
+msgid "Number of entries."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:510
+msgid "Ignore case."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:553
+msgid "No entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:569
+msgid "Search result of '%s', %d entries."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:572
+msgid "List of %d entries."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:575
+msgid " [page %d/%d]"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:583
+msgid "Command (p:prev, n:next, s:sort, q:quit): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:674
+msgid ""
+"%sID |%sName                                           |%sTags(s)            "
+"|%sRate"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:698
+msgid "Delete the entry."
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:699
+msgid "usage: delete <ID>"
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:717
+msgid "Delete? (no): "
+msgstr ""
+
+#: lib/s7n/s7ncli/entry_command.rb:720
+msgid "Deleted: %d"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:85
+msgid "usage: s7ncli [options]"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:87
+msgid "options:"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:89
+msgid "Specify the base directory. Default is '%s'."
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:92
+msgid "Show version."
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:93
+msgid "s7ncli, version %s"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:97
+msgid "Show help and exit."
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:132
+msgid "Comfirm the master key for s7: "
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:142
+msgid "created base directory: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:155
+msgid "could not read: %s"
+msgstr ""
+
+#: lib/s7n/s7ncli.rb:204
+msgid "could not write: %s"
+msgstr ""
+
+#: lib/s7n/utils.rb:32
+msgid "failed execute: command=<%s>"
+msgstr ""
+
+#: lib/s7n/world.rb:75 lib/s7n/world.rb:90
+msgid "running other s7n: pid=<%d>"
+msgstr ""
