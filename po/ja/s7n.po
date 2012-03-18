@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: s7n 0.1.0\n"
-"POT-Creation-Date: 2012-03-17 18:07+0900\n"
-"PO-Revision-Date: 2012-03-17 23:44+0900\n"
+"POT-Creation-Date: 2012-03-18 14:35+0900\n"
+"PO-Revision-Date: 2012-03-18 14:41+0900\n"
 "Last-Translator: TAKAO Kouji <kouji@takao7.net>\n"
 "Language-Team: Japanese\n"
 "Language: \n"
@@ -19,27 +19,15 @@ msgstr ""
 
 #: lib/s7n/attribute.rb:161
 msgid "Yes"
-msgstr ""
+msgstr "はい"
 
 #: lib/s7n/attribute.rb:161
 msgid "No"
-msgstr ""
-
-#: lib/s7n/entry.rb:18
-msgid "id"
-msgstr ""
-
-#: lib/s7n/entry.rb:21 lib/s7n/gpass_file.rb:26
-msgid "name"
-msgstr ""
-
-#: lib/s7n/entry.rb:23
-msgid "rate"
-msgstr ""
+msgstr "いいえ"
 
 #: lib/s7n/entry.rb:59
-msgid "not same attribute type: name=<%s> exist=<%s> argument=<%s>"
-msgstr ""
+msgid "not same attribute type: name=<%s> expected=<%s> actual=<%s>"
+msgstr "属性の型が違います: 名前=<%s> 期待する型=<%s> 指定された型=<%s>"
 
 #: lib/s7n/exception.rb:14
 msgid "Invlaid passphrase."
@@ -47,7 +35,7 @@ msgstr "不正なパスフレーズです。"
 
 #: lib/s7n/exception.rb:25
 msgid "Invalid path: path=<%s>"
-msgstr ""
+msgstr "パスが違います: パス=<%s>"
 
 #: lib/s7n/exception.rb:36
 msgid "Does not exit: path=<%s>"
@@ -55,30 +43,34 @@ msgstr "ファイルやディレクトリは存在しません: パス=<%s>"
 
 #: lib/s7n/exception.rb:54
 msgid "No such entry."
-msgstr ""
+msgstr "そのようなエントリーはありません。"
 
 #: lib/s7n/exception.rb:56
 msgid "No such entry:%s"
-msgstr ""
+msgstr "そのようなエントリーはありません:%s"
 
 #: lib/s7n/exception.rb:75
 msgid "No such attribute."
-msgstr ""
+msgstr "そのような属性はありません。"
 
 #: lib/s7n/exception.rb:77
 msgid "No such attribute:%s"
-msgstr ""
+msgstr "そのような属性はありません:%s"
 
 #: lib/s7n/exception.rb:90
 msgid "Invalid data length: actual=<%s> needed=<%s>"
-msgstr ""
+msgstr "データ長が不正です: 実際の値=<%s> 期待値=<%s>"
 
 #: lib/s7n/exception.rb:96
 msgid "Canceled."
-msgstr ""
+msgstr "キャンセルしました。"
 
 #: lib/s7n/exception.rb:113
 msgid "Failed the command: command=<%s> status=<%d>"
+msgstr ""
+
+#: lib/s7n/gpass_file.rb:26
+msgid "name"
 msgstr ""
 
 #: lib/s7n/gpass_file.rb:27
@@ -177,7 +169,7 @@ msgid "usage: help [COMMAND]"
 msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:129 lib/s7n/s7ncli/entry_command.rb:284
-#: lib/s7n/s7ncli.rb:177
+#: lib/s7n/s7ncli.rb:182
 msgid "Unknown command: %s"
 msgstr ""
 
@@ -217,7 +209,7 @@ msgstr ""
 msgid "Locked screen."
 msgstr ""
 
-#: lib/s7n/s7ncli/command.rb:177 lib/s7n/s7ncli.rb:115 lib/s7n/s7ncli.rb:127
+#: lib/s7n/s7ncli/command.rb:177 lib/s7n/s7ncli.rb:120 lib/s7n/s7ncli.rb:132
 msgid "Enter the master key for s7n: "
 msgstr "s7nのマスターキーを入力してください: "
 
@@ -230,11 +222,15 @@ msgstr ""
 msgid "Try again."
 msgstr ""
 
-#: lib/s7n/s7ncli/command.rb:196 lib/s7n/s7ncli/command.rb:205
+#: lib/s7n/s7ncli/command.rb:192 lib/s7n/s7ncli.rb:190 lib/s7n/s7ncli.rb:219
+msgid "----- back trace -----"
+msgstr ""
+
+#: lib/s7n/s7ncli/command.rb:198 lib/s7n/s7ncli/command.rb:207
 msgid "Quit."
 msgstr ""
 
-#: lib/s7n/s7ncli/command.rb:206
+#: lib/s7n/s7ncli/command.rb:208
 msgid "usage: quit"
 msgstr ""
 
@@ -496,31 +492,35 @@ msgstr "オプション:"
 msgid "Specify the base directory. Default is '%s'."
 msgstr "ベースディレクトリを指定する。デフォルトは'%s'です。"
 
-#: lib/s7n/s7ncli.rb:92
+#: lib/s7n/s7ncli.rb:93
+msgid "Turn on debug mode. Default is '%s'."
+msgstr "デバッグモードを有効にします。デフォルトは'%s'です。"
+
+#: lib/s7n/s7ncli.rb:96
 msgid "Show version."
 msgstr ""
 
-#: lib/s7n/s7ncli.rb:93
+#: lib/s7n/s7ncli.rb:97
 msgid "s7ncli, version %s"
 msgstr ""
 
-#: lib/s7n/s7ncli.rb:97
+#: lib/s7n/s7ncli.rb:101
 msgid "Show help and exit."
 msgstr "使用方法を表示して終了する。"
 
-#: lib/s7n/s7ncli.rb:132
+#: lib/s7n/s7ncli.rb:137
 msgid "Comfirm the master key for s7n: "
 msgstr ""
 
-#: lib/s7n/s7ncli.rb:142
+#: lib/s7n/s7ncli.rb:147
 msgid "created base directory: %s"
 msgstr ""
 
-#: lib/s7n/s7ncli.rb:155
+#: lib/s7n/s7ncli.rb:160
 msgid "could not read: %s"
 msgstr ""
 
-#: lib/s7n/s7ncli.rb:204
+#: lib/s7n/s7ncli.rb:209
 msgid "could not write: %s"
 msgstr ""
 
@@ -528,6 +528,6 @@ msgstr ""
 msgid "failed execute: command=<%s>"
 msgstr ""
 
-#: lib/s7n/world.rb:75 lib/s7n/world.rb:90
+#: lib/s7n/world.rb:81 lib/s7n/world.rb:98
 msgid "running other s7n: pid=<%d>"
 msgstr "すでにs7nを起動しています: pid=<%d>"

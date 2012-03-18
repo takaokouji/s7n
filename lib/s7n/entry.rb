@@ -15,12 +15,12 @@ module S7n
 
     def initialize
       @attributes = []
-      attr = NumericAttribute.new("name" => N_("id"), "editabled" => false,
+      attr = NumericAttribute.new("name" => "id", "editabled" => false,
                                   "protected" => true)
       @attributes.push(attr)
-      attr = TextAttribute.new("name" => N_("name"), "protected" => true)
+      attr = TextAttribute.new("name" => "name", "protected" => true)
       @attributes.push(attr)
-      attr = NumericAttribute.new("name" => N_("rate"), "protected" => true,
+      attr = NumericAttribute.new("name" => "rate", "protected" => true,
                                   "value" => 1)
       @attributes.push(attr)
       
@@ -56,7 +56,7 @@ module S7n
           if attr.class == attribute.class
             attr.value = attribute.value
           else
-            raise ApplicationError, _("not same attribute type: name=<%s> exist=<%s> argument=<%s>") % [attr.name, attr.class, attribute.class]
+            raise ApplicationError, _("not same attribute type: name=<%s> expected=<%s> actual=<%s>") % [attr.name, attr.class, attribute.class]
           end
         else
           @attributes.push(attribute)
