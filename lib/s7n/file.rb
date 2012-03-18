@@ -20,13 +20,13 @@ module S7n
     def self.create(path, passphrase)
       path = ::File.expand_path(path)
       if ::File.exist?(path)
-        raise S7::Exception, "already exist file or directory: #{path}"
+        raise S7n::Exception, "already exist file or directory: #{path}"
       end
       ::File.open(path, "w") do |f|
-        key = S7::Key.create_instance("SHA-1", passphrase)
+        key = S7n::Key.create_instance("SHA-1", passphrase)
         cipher =
-          S7::Cipher.create_instance("BF-CBC", :key => key, :iv => S7::File::IV)
-        magic = cipher.encrypt(StringIO.new(S7::File::MAGIC))
+          S7n::Cipher.create_instance("BF-CBC", :key => key, :iv => S7::File::IV)
+        magic = cipher.encrypt(StringIO.new(S7n::File::MAGIC))
         f.write(magic)
       end
     end
@@ -34,7 +34,7 @@ module S7n
     def self.open(path, passphrase)
       path = ::File.expand_path(path)
       if !::File.exist?(path)
-        raise S7::Exception, "no such file or directory: #{path}"
+        raise S7n::Exception, "no such file or directory: #{path}"
       end
       if !block_given?
         raise ArgumentError, "no block given"
@@ -61,9 +61,9 @@ module S7n
 
     def initialize(path, passphrase)
       self.path = ::File.expand_path(path)
-      self.key = S7::Key.create_instance("SHA-1", passphrase)
-      self.cipher = S7::Cipher.create_instance("BF-CBC", :key => key,
-                                               :iv => S7::File::IV)
+      self.key = S7n::Key.create_instance("SHA-1", passphrase)
+      self.cipher = S7n::Cipher.create_instance("BF-CBC", :key => key,
+                                                :iv => S7n::File::IV)
       self.file = nil
     end
 

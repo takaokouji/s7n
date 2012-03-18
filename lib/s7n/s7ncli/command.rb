@@ -176,7 +176,7 @@ module S7n
         world.save
         prompt = _("Enter the master key for s7n: ")
         begin
-          input = S7Cli.input_string_without_echo(prompt)
+          input = S7nCli.input_string_without_echo(prompt)
           if input != world.master_key
             raise InvalidPassphrase
           end
