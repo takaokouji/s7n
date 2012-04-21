@@ -25,9 +25,16 @@ module S7n
     # 機密情報を削除し、削除した機密情報を返す。
     def delete_entries(*entries)
       entries = [entries].flatten
-      return @entries.delete_if { |entry|
-        entries.include?(entry)
+      deleted_entries = []
+      @entries.delete_if { |entry|
+        if entries.include?(entry)
+          deleted_entries << entry
+          true
+        else
+          false
+        end
       }
+      return deleted_entries
     end
 
     # other で指定した EntryCollection オブジェクトの entries をマージ

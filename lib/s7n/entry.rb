@@ -13,15 +13,26 @@ module S7n
     # 属性の配列。
     attr_reader :attributes
 
-    def initialize
+    def initialize(attrs = {})
       @attributes = []
       attr = NumericAttribute.new("name" => "id", "editabled" => false,
                                   "protected" => true)
+      if attrs.key?(:id)
+        attr.value = attrs[:id]
+      end
       @attributes.push(attr)
       attr = TextAttribute.new("name" => "name", "protected" => true)
+      if attrs.key?(:name)
+        attr.value = attrs[:name]
+      end
       @attributes.push(attr)
+      if attrs.key?(:rate)
+        value = attrs[:rate]
+      else
+        value = 1
+      end
       attr = NumericAttribute.new("name" => "rate", "protected" => true,
-                                  "value" => 1)
+                                  "value" => value)
       @attributes.push(attr)
       
       @tags = []
