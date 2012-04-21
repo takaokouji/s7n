@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: s7n 0.1.1\n"
 "POT-Creation-Date: 2012-03-18 14:51+0900\n"
-"PO-Revision-Date: 2012-03-18 14:41+0900\n"
+"PO-Revision-Date: 2012-04-11 20:43+0900\n"
 "Last-Translator: TAKAO Kouji <kouji@takao7.net>\n"
 "Language-Team: Japanese\n"
 "Language: \n"
@@ -183,7 +183,7 @@ msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:153
 msgid "Save."
-msgstr ""
+msgstr "保存しました。"
 
 #: lib/s7n/s7ncli/command.rb:153
 msgid "usage: save"
@@ -195,7 +195,7 @@ msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:163
 msgid "Saved."
-msgstr ""
+msgstr "保存しました。"
 
 #: lib/s7n/s7ncli/command.rb:171
 msgid "Lock screen after saved."
@@ -207,7 +207,7 @@ msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:175
 msgid "Locked screen."
-msgstr ""
+msgstr "画面をロックしました。"
 
 #: lib/s7n/s7ncli/command.rb:177 lib/s7n/s7ncli.rb:120 lib/s7n/s7ncli.rb:132
 msgid "Enter the master key for s7n: "
@@ -215,12 +215,12 @@ msgstr "s7nのマスターキーを入力してください: "
 
 #: lib/s7n/s7ncli/command.rb:183
 msgid "Unlocked."
-msgstr ""
+msgstr "ロックを解除しました。"
 
 #: lib/s7n/s7ncli/command.rb:187 lib/s7n/s7ncli/entry_command.rb:77
 #: lib/s7n/s7ncli/entry_command.rb:129
 msgid "Try again."
-msgstr ""
+msgstr "もう一度入力してください。"
 
 #: lib/s7n/s7ncli/command.rb:192 lib/s7n/s7ncli.rb:190 lib/s7n/s7ncli.rb:219
 msgid "----- back trace -----"
