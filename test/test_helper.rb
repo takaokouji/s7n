@@ -7,6 +7,7 @@ require "tempfile"
 require "stringio"
 require "gettext"
 require "shoulda"
+require "test/unit/rr"
 
 class Test::Unit::TestCase
   include GetText
