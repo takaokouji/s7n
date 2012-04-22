@@ -478,8 +478,8 @@ module S7n
         if config["show_secret"]
           # TODO: undo スタックに操作を追加する。
           entry.rate += 1
-          puts(_("Changed rate to %d.") % entry.rate)
           world.changed = true
+          puts(_("Changed rate to %d.") % entry.rate)
         end
         return true
       end
@@ -717,6 +717,7 @@ module S7n
         if S7nCli.input_boolean(_("Delete? (no): "))
           # TODO: undo スタックに操作を追加。
           world.entry_collection.delete_entries(entry)
+          world.changed = true
           puts(_("Deleted: %d") % entry.id)
         else
           canceled

@@ -21,6 +21,7 @@ module S7n
                 cipher_type + "\n",
                 cipher.encrypt(StringIO.new(data))].join
         f.write(data)
+        f.flush
         f.truncate(f.pos)
       end
       FileUtils.chmod(0600, path)
