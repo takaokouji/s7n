@@ -66,7 +66,13 @@ module S7n
     
     # ログの記録を開始する。
     def start_logging
-      log_path = File.join(base_dir, "s7n.log")
+      s7n_log_path = File.join(base_dir, "s7n.log")
+      s7_log_path = File.join(base_dir, "s7.log")
+      if !File.exist?(s7n_log_path) && File.exist?(s7_log_path)
+        log_path = s7_log_path
+      else
+        log_path = s7n_log_path
+      end
       self.logger = Logger.new(log_path)
       logger.level = Logger::DEBUG
     end
