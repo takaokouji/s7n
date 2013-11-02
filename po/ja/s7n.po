@@ -6,8 +6,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: s7n 0.1.1\n"
-"POT-Creation-Date: 2012-03-18 14:51+0900\n"
+"Project-Id-Version: s7n 0.1.2\n"
+"POT-Creation-Date: 2013-11-02 21:25+0900\n"
 "PO-Revision-Date: 2012-04-11 20:43+0900\n"
 "Last-Translator: TAKAO Kouji <kouji@takao7.net>\n"
 "Language-Team: Japanese\n"
@@ -25,7 +25,7 @@ msgstr "はい"
 msgid "No"
 msgstr "いいえ"
 
-#: lib/s7n/entry.rb:59
+#: lib/s7n/entry.rb:70
 msgid "not same attribute type: name=<%s> expected=<%s> actual=<%s>"
 msgstr "属性の型が違います: 名前=<%s> 期待する型=<%s> 指定された型=<%s>"
 
@@ -67,7 +67,7 @@ msgstr "キャンセルしました。"
 
 #: lib/s7n/exception.rb:113
 msgid "Failed the command: command=<%s> status=<%d>"
-msgstr ""
+msgstr "コマンドの実行に失敗: コマンド=<%s> ステータス=<%d>"
 
 #: lib/s7n/gpass_file.rb:26
 msgid "name"
@@ -111,75 +111,75 @@ msgstr ""
 
 #: lib/s7n/gpass_file.rb:86
 msgid "not supported version: %s"
-msgstr ""
+msgstr "このバージョンはサポートしていません: %s"
 
 #: lib/s7n/gpass_file.rb:94
 msgid "duplicated entry id: %s"
-msgstr ""
+msgstr "エントリーIDが重複しています: %s"
 
 #: lib/s7n/gpass_file.rb:130
 msgid "invalid entry type: type=<%s>"
-msgstr ""
+msgstr "エントリーの種類が不正です: 種類=<%s>"
 
 #: lib/s7n/s7ncli/attribute_command.rb:14
-#: lib/s7n/s7ncli/attribute_command.rb:51
+#: lib/s7n/s7ncli/attribute_command.rb:56
 msgid "Copy the attribute value to the clipboard."
-msgstr ""
+msgstr "クリップボードに属性をコピーしました。"
 
 #: lib/s7n/s7ncli/attribute_command.rb:15
 msgid "usage: copy [ID] [ATTRIBUTE NAME] [OPTIONS]"
-msgstr ""
+msgstr "使用方法: copy [ID] [属性名] [オプション]"
 
-#: lib/s7n/s7ncli/attribute_command.rb:26 lib/s7n/s7ncli/entry_command.rb:406
+#: lib/s7n/s7ncli/attribute_command.rb:31 lib/s7n/s7ncli/entry_command.rb:406
 #: lib/s7n/s7ncli/entry_command.rb:454
 msgid "Entry ID."
-msgstr ""
-
-#: lib/s7n/s7ncli/attribute_command.rb:27
-msgid "Attribute name."
-msgstr ""
-
-#: lib/s7n/s7ncli/attribute_command.rb:29
-msgid "Inclement the entry's rate after copied."
-msgstr ""
-
-#: lib/s7n/s7ncli/attribute_command.rb:31
-msgid "Lock screen after copied."
-msgstr ""
+msgstr "エントリーのID"
 
 #: lib/s7n/s7ncli/attribute_command.rb:32
-msgid "Copy command."
-msgstr ""
+msgid "Attribute name."
+msgstr "属性名"
 
-#: lib/s7n/s7ncli/attribute_command.rb:47 lib/s7n/s7ncli/entry_command.rb:422
+#: lib/s7n/s7ncli/attribute_command.rb:34
+msgid "Inclement the entry's rate after copied."
+msgstr "コピー後にエントリーの人気度を1つ増やす"
+
+#: lib/s7n/s7ncli/attribute_command.rb:36
+msgid "Lock screen after copied."
+msgstr "コピー後にロックする"
+
+#: lib/s7n/s7ncli/attribute_command.rb:37
+msgid "Copy command."
+msgstr "コピーコマンド"
+
+#: lib/s7n/s7ncli/attribute_command.rb:52 lib/s7n/s7ncli/entry_command.rb:422
 #: lib/s7n/s7ncli/entry_command.rb:466 lib/s7n/s7ncli/entry_command.rb:707
 msgid "Too few arguments."
-msgstr ""
+msgstr "引数が足りません"
 
-#: lib/s7n/s7ncli/attribute_command.rb:71 lib/s7n/s7ncli/entry_command.rb:481
+#: lib/s7n/s7ncli/attribute_command.rb:79 lib/s7n/s7ncli/entry_command.rb:482
 msgid "Changed rate to %d."
-msgstr ""
+msgstr "人気度を%dにする"
 
 #: lib/s7n/s7ncli/command.rb:119
 msgid "Describe the commands."
-msgstr ""
+msgstr "コマンドの説明"
 
 #: lib/s7n/s7ncli/command.rb:120
 msgid "usage: help [COMMAND]"
-msgstr ""
+msgstr "使用方法: help [コマンド]"
 
 #: lib/s7n/s7ncli/command.rb:129 lib/s7n/s7ncli/entry_command.rb:284
 #: lib/s7n/s7ncli.rb:182
 msgid "Unknown command: %s"
-msgstr ""
+msgstr "不明なコマンド: %s"
 
 #: lib/s7n/s7ncli/command.rb:132
 msgid "Type 'help <command>' for help on a specific command."
-msgstr ""
+msgstr "'help <コマンド>'を実行すると指定したコマンドの使用方法が確認できる"
 
 #: lib/s7n/s7ncli/command.rb:134
 msgid "Available commands:"
-msgstr ""
+msgstr "利用可能なコマンド:"
 
 #: lib/s7n/s7ncli/command.rb:153
 msgid "Save."
@@ -187,11 +187,11 @@ msgstr "保存しました。"
 
 #: lib/s7n/s7ncli/command.rb:153
 msgid "usage: save"
-msgstr ""
+msgstr "使用方法: save"
 
 #: lib/s7n/s7ncli/command.rb:157
 msgid "Force."
-msgstr ""
+msgstr "強制"
 
 #: lib/s7n/s7ncli/command.rb:163
 msgid "Saved."
@@ -199,11 +199,11 @@ msgstr "保存しました。"
 
 #: lib/s7n/s7ncli/command.rb:171
 msgid "Lock screen after saved."
-msgstr ""
+msgstr "保存後にロックする"
 
 #: lib/s7n/s7ncli/command.rb:171
 msgid "usage: lock"
-msgstr ""
+msgstr "使用方法: lock"
 
 #: lib/s7n/s7ncli/command.rb:175
 msgid "Locked screen."
@@ -228,27 +228,27 @@ msgstr ""
 
 #: lib/s7n/s7ncli/command.rb:198 lib/s7n/s7ncli/command.rb:207
 msgid "Quit."
-msgstr ""
+msgstr "終了する"
 
 #: lib/s7n/s7ncli/command.rb:208
 msgid "usage: quit"
-msgstr ""
+msgstr "使用方法: quit"
 
 #: lib/s7n/s7ncli/entry_collection_command.rb:15
 msgid "Import the entry colleciton from file."
-msgstr ""
+msgstr "エントリーコレクションをファイルからインポートする"
 
 #: lib/s7n/s7ncli/entry_collection_command.rb:16
 msgid "usage: import [PATH] [OPTIONS]"
-msgstr ""
+msgstr "使用方法: import [パス] [オプション]"
 
 #: lib/s7n/s7ncli/entry_collection_command.rb:22
 msgid "type"
-msgstr ""
+msgstr "種類"
 
 #: lib/s7n/s7ncli/entry_collection_command.rb:23
 msgid "path"
-msgstr ""
+msgstr "パス"
 
 #: lib/s7n/s7ncli/entry_collection_command.rb:38
 msgid "Import the entry collection in the GPass file: %s"
@@ -428,7 +428,7 @@ msgstr ""
 
 #: lib/s7n/s7ncli/entry_command.rb:507
 msgid "Query."
-msgstr ""
+msgstr "検索条件"
 
 #: lib/s7n/s7ncli/entry_command.rb:509
 msgid "Number of entries."
@@ -444,15 +444,15 @@ msgstr "エントリーがありません。"
 
 #: lib/s7n/s7ncli/entry_command.rb:569
 msgid "Search result of '%s', %d entries."
-msgstr ""
+msgstr "'%s'の検索結果 (総数: %d)"
 
 #: lib/s7n/s7ncli/entry_command.rb:572
 msgid "List of %d entries."
-msgstr ""
+msgstr "エントリーの一覧 (総数: %d)"
 
 #: lib/s7n/s7ncli/entry_command.rb:575
 msgid " [page %d/%d]"
-msgstr ""
+msgstr " [ページ %d/%d]"
 
 #: lib/s7n/s7ncli/entry_command.rb:583
 msgid "Command (p:prev, n:next, s:sort, q:quit): "
@@ -476,7 +476,7 @@ msgstr ""
 msgid "Delete? (no): "
 msgstr ""
 
-#: lib/s7n/s7ncli/entry_command.rb:720
+#: lib/s7n/s7ncli/entry_command.rb:721
 msgid "Deleted: %d"
 msgstr ""
 
@@ -526,8 +526,8 @@ msgstr ""
 
 #: lib/s7n/utils.rb:32
 msgid "failed execute: command=<%s>"
-msgstr ""
+msgstr "実行できませんでした: コマンド=<%s>"
 
-#: lib/s7n/world.rb:81 lib/s7n/world.rb:98
+#: lib/s7n/world.rb:87 lib/s7n/world.rb:104
 msgid "running other s7n: pid=<%d>"
 msgstr "すでにs7nを起動しています: pid=<%d>"

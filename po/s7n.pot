@@ -6,8 +6,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: s7n 0.1.1\n"
-"POT-Creation-Date: 2012-03-18 14:51+0900\n"
+"Project-Id-Version: s7n 0.1.2\n"
+"POT-Creation-Date: 2013-11-02 21:25+0900\n"
 "PO-Revision-Date: 2012-03-17 17:57+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: lib/s7n/entry.rb:59
+#: lib/s7n/entry.rb:70
 msgid "not same attribute type: name=<%s> expected=<%s> actual=<%s>"
 msgstr ""
 
@@ -122,7 +122,7 @@ msgid "invalid entry type: type=<%s>"
 msgstr ""
 
 #: lib/s7n/s7ncli/attribute_command.rb:14
-#: lib/s7n/s7ncli/attribute_command.rb:51
+#: lib/s7n/s7ncli/attribute_command.rb:56
 msgid "Copy the attribute value to the clipboard."
 msgstr ""
 
@@ -130,33 +130,33 @@ msgstr ""
 msgid "usage: copy [ID] [ATTRIBUTE NAME] [OPTIONS]"
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:26 lib/s7n/s7ncli/entry_command.rb:406
+#: lib/s7n/s7ncli/attribute_command.rb:31 lib/s7n/s7ncli/entry_command.rb:406
 #: lib/s7n/s7ncli/entry_command.rb:454
 msgid "Entry ID."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:27
+#: lib/s7n/s7ncli/attribute_command.rb:32
 msgid "Attribute name."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:29
+#: lib/s7n/s7ncli/attribute_command.rb:34
 msgid "Inclement the entry's rate after copied."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:31
+#: lib/s7n/s7ncli/attribute_command.rb:36
 msgid "Lock screen after copied."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:32
+#: lib/s7n/s7ncli/attribute_command.rb:37
 msgid "Copy command."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:47 lib/s7n/s7ncli/entry_command.rb:422
+#: lib/s7n/s7ncli/attribute_command.rb:52 lib/s7n/s7ncli/entry_command.rb:422
 #: lib/s7n/s7ncli/entry_command.rb:466 lib/s7n/s7ncli/entry_command.rb:707
 msgid "Too few arguments."
 msgstr ""
 
-#: lib/s7n/s7ncli/attribute_command.rb:71 lib/s7n/s7ncli/entry_command.rb:481
+#: lib/s7n/s7ncli/attribute_command.rb:79 lib/s7n/s7ncli/entry_command.rb:482
 msgid "Changed rate to %d."
 msgstr ""
 
@@ -476,7 +476,7 @@ msgstr ""
 msgid "Delete? (no): "
 msgstr ""
 
-#: lib/s7n/s7ncli/entry_command.rb:720
+#: lib/s7n/s7ncli/entry_command.rb:721
 msgid "Deleted: %d"
 msgstr ""
 
@@ -528,6 +528,6 @@ msgstr ""
 msgid "failed execute: command=<%s>"
 msgstr ""
 
-#: lib/s7n/world.rb:81 lib/s7n/world.rb:98
+#: lib/s7n/world.rb:87 lib/s7n/world.rb:104
 msgid "running other s7n: pid=<%d>"
 msgstr ""
