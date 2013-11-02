@@ -7,3 +7,4 @@
 /tmp
 .rake_tasks
 /.bundle
+.ruby-version
