@@ -13,13 +13,18 @@ module S7n
                "c"],
               _("Copy the attribute value to the clipboard."),
               _("usage: copy [ID] [ATTRIBUTE NAME] [OPTIONS]"))
-      
+
       def initialize(*args)
         super
-        copy_commands = ["/usr/bin/pbcopy", "/usr/bin/xclip"]
-        copy_commands.each do |cmd|
-          if File.executable?(cmd)
-            @config["copy_command"] = cmd
+        if /cygwin/ =~ RUBY_PLATFORM
+          @config["copy_command"] = `cygpath "#{ ENV['WINDIR'] + '\\system32\\clip' }"`.chomp
+        else
+          copy_commands = ["/usr/bin/pbcopy", "/usr/bin/xclip"]
+          copy_commands.each do |cmd|
+            if File.executable?(cmd)
+              @config["copy_command"] = cmd
+              break
+            end
           end
         end
         @config["inclement_rate"] = true
@@ -59,6 +64,9 @@ module S7n
                                     "name" => config["name"])
         end
         copy_command = @config["copy_command"]
+        if !copy_command
+          raise CommandFailed.new(copy_command, -1)
+        end
         res, status = Open3.capture2(copy_command,
                                      stdin_data: attr.value.to_s,
                                      binmode: true)
