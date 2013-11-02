@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "s7n"
   s.version     = S7n::VERSION
   s.authors     = ["Kouji Takao"]
-  s.email       = ["kouji@takao7.net"]
+  s.email       = ["kouji.takao@gmail.com"]
   s.homepage    = "https://github.com/takaokouji/s7n"
   s.summary     = %q{The secret informations manager.}
-  s.description = File.read(File.expand_path("../README.rdoc", __FILE__))
+  s.description = %q{s7n(seven) is a secret informations manager (a.k.a password manager).}
   s.licenses    = ["BSD"]
 
   s.rubyforge_project = "s7n"
