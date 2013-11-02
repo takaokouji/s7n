@@ -9,7 +9,7 @@ GEM
   specs:
     gettext (2.2.0)
       locale
-    locale (2.0.5)
+    locale (2.0.9)
     rr (1.0.4)
     shoulda (3.0.1)
       shoulda-context (~> 1.0.0)
